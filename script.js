@@ -12,8 +12,27 @@ const form = document.querySelector("[data-form]");
 const statusText = document.querySelector("[data-status]");
 const themeButton = document.querySelector("[data-theme]");
 const parallax = document.querySelector("[data-parallax]");
+const submitButton = document.querySelector("[data-submit]");
+const nameCopy = document.querySelector("[data-name-copy]");
+const emailCopy = document.querySelector("[data-email-copy]");
 
 let particles = [];
+
+const emailConfig = {
+  serviceId: "service_wj479ig",
+  templateId: "template_6isld9p",
+  publicKey: "eBUJLLgCXjQH5bf6p"
+};
+
+const isEmailConfigured = () => (
+  emailConfig.serviceId !== "YOUR_EMAILJS_SERVICE_ID" &&
+  emailConfig.templateId !== "YOUR_EMAILJS_TEMPLATE_ID" &&
+  emailConfig.publicKey !== "YOUR_EMAILJS_PUBLIC_KEY"
+);
+
+const getEmailErrorMessage = (error) => (
+  error?.text || error?.message || "Unknown EmailJS error"
+);
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -40,6 +59,8 @@ const typeName = async () => {
     typingTarget.textContent = value.slice(0, index);
     await new Promise((resolve) => setTimeout(resolve, delay));
   }
+
+  typingTarget.textContent = value;
 };
 
 typeName();
@@ -190,11 +211,42 @@ themeButton.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
-  statusText.textContent = "Preparing your message...";
-  setTimeout(() => {
-    statusText.textContent = "Message ready. Please connect through phone, GitHub, or LinkedIn.";
+
+  statusText.classList.remove("is-error", "is-success");
+
+  if (!window.emailjs || !isEmailConfigured()) {
+    statusText.classList.add("is-error");
+    statusText.textContent = "Email service is not configured yet. Please add EmailJS service ID, template ID, and public key.";
+    return;
+  }
+
+  emailjs.init({ publicKey: emailConfig.publicKey });
+  nameCopy.value = form.elements.from_name.value;
+  emailCopy.value = form.elements.reply_to.value;
+
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending...";
+  statusText.textContent = "Sending your message...";
+
+  try {
+    await emailjs.sendForm(
+      emailConfig.serviceId,
+      emailConfig.templateId,
+      form,
+      { publicKey: emailConfig.publicKey }
+    );
+
+    statusText.classList.add("is-success");
+    statusText.textContent = "Message sent successfully. Thank you!";
     form.reset();
-  }, 900);
+  } catch (error) {
+    console.error("EmailJS send failed:", error);
+    statusText.classList.add("is-error");
+    statusText.textContent = `Message could not be sent: ${getEmailErrorMessage(error)}`;
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "Send Message";
+  }
 });

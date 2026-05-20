@@ -278,9 +278,9 @@ body.light-mode .site-header.is-scrolled {
 }
 
 .eyebrow {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   color: var(--cyan);
-  font-size: 0.74rem;
+  font-size: clamp(0.82rem, 1.25vw, 0.94rem);
   font-weight: 900;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -300,7 +300,7 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: clamp(2.7rem, 6.4vw, 5.2rem);
+  font-size: clamp(2.25rem, 5.4vw, 4.45rem);
   line-height: 0.98;
   letter-spacing: 0;
   text-shadow: 0 0 70px rgba(99, 102, 241, 0.28);
@@ -318,7 +318,7 @@ h1 {
 .typewriter-name [data-typing] {
   display: inline-block;
   min-width: min(12ch, 100%);
-  padding-right: 0.08em;
+  padding-right: 0.16em;
   overflow-wrap: anywhere;
 }
 
@@ -640,7 +640,10 @@ body.light-mode .tech-float {
     radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.22), transparent 24%),
     linear-gradient(135deg, #16172c, #25104c 52%, #062c3c);
   color: white;
-  font-size: clamp(3rem, 8vw, 5rem);
+  padding: 18px;
+  text-align: center;
+  font-size: clamp(1.45rem, 4vw, 2.25rem);
+  line-height: 1.08;
   font-weight: 900;
 }
 
@@ -778,6 +781,18 @@ body.light-mode .badges span {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.project-card.reveal {
+  transform: translateX(-42px);
+}
+
+.project-card.reveal:nth-child(even) {
+  transform: translateX(42px);
+}
+
+.project-card.reveal.is-visible {
+  transform: translateX(0);
 }
 
 .project-image {
@@ -1005,6 +1020,14 @@ body.light-mode .badges span {
   color: var(--green);
 }
 
+.form-status.is-error {
+  color: #fb7185;
+}
+
+.form-status.is-success {
+  color: var(--green);
+}
+
 .contact-info {
   display: grid;
   gap: 14px;
@@ -1019,30 +1042,101 @@ body.light-mode .badges span {
   color: var(--cyan);
 }
 
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-line svg {
+  flex: 0 0 auto;
+  width: 21px;
+  height: 21px;
+  fill: var(--cyan);
+}
+
+.contact-email {
+  font-size: 1.02rem;
+}
+
+.social-title {
+  margin-top: 10px;
+  color: var(--text);
+  font-weight: 800;
+}
+
 .socials {
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 16px;
+  margin-top: 4px;
 }
 
 .socials a {
   display: grid;
-  min-width: 76px;
-  min-height: 48px;
+  width: 52px;
+  height: 52px;
   place-items: center;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
-  padding: 0 14px;
   color: var(--text);
-  font-size: 0.86rem;
-  font-weight: 900;
   transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.socials .github-link {
+  background: #181717;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.socials .linkedin-link {
+  background: #0a66c2;
+  color: #ffffff;
+  border-color: rgba(10, 102, 194, 0.8);
+}
+
+.socials .instagram-link {
+  background: radial-gradient(circle at 30% 105%, #fdf497 0 12%, #fd5949 34%, #d6249f 62%, #285aeb 100%);
+  color: #ffffff;
+  border-color: rgba(214, 36, 159, 0.65);
+}
+
+body.light-mode .socials .github-link {
+  background: #181717;
+  color: #ffffff;
+}
+
+body.light-mode .socials .linkedin-link {
+  background: #0a66c2;
+  color: #ffffff;
+}
+
+body.light-mode .socials .instagram-link {
+  background: radial-gradient(circle at 30% 105%, #fdf497 0 12%, #fd5949 34%, #d6249f 62%, #285aeb 100%);
+  color: #ffffff;
+}
+
+.socials svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 .socials a:hover {
   transform: translateY(-4px) rotate(-6deg);
   box-shadow: 0 0 28px rgba(0, 245, 255, 0.42);
+}
+
+.socials .github-link:hover {
+  box-shadow: 0 0 28px rgba(255, 255, 255, 0.36);
+}
+
+.socials .linkedin-link:hover {
+  box-shadow: 0 0 28px rgba(10, 102, 194, 0.58);
+}
+
+.socials .instagram-link:hover {
+  box-shadow: 0 0 28px rgba(214, 36, 159, 0.58);
 }
 
 footer {
@@ -1235,7 +1329,7 @@ footer a {
 
   h1 {
     min-height: auto;
-    font-size: clamp(2.05rem, 11vw, 3rem);
+    font-size: clamp(1.9rem, 9.8vw, 2.72rem);
   }
 
   h2 {
@@ -1356,7 +1450,7 @@ footer a {
   }
 
   h1 {
-    font-size: clamp(1.82rem, 10.5vw, 2.45rem);
+    font-size: clamp(1.62rem, 9.4vw, 2.18rem);
   }
 }
 
