@@ -1,335 +1,369 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakshi Hudge | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container">
-            <div class="logo">Sakshi Hudge</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#internships">Internships</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sakshi Hudge | Software Developer</title>
+    <meta
+      name="description"
+      content="Professional profile for Sakshi Hudge, Software Developer with Java and MERN Stack knowledge, currently learning AI/ML."
+    >
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="loader" data-loader>
+      <div class="loader-core"></div>
+      <p>Loading developer profile</p>
+    </div>
+
+    <div class="scroll-progress" data-progress></div>
+    <div class="cursor-glow" data-cursor></div>
+    <canvas class="particle-canvas" data-particles aria-hidden="true"></canvas>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Sakshi Hudge home">
+        <span class="brand-mark">SH</span>
+        <span>Sakshi Hudge</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <button class="icon-button" type="button" data-theme aria-label="Toggle light or dark theme">Theme</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Software Developer</p>
+            <h1 class="typewriter-name"><span data-typing="Sakshi Hudge">Sakshi Hudge</span></h1>
+            <p class="hero-subtitle">Java Developer | MERN Stack Developer | Learning AI/ML</p>
+            <p class="hero-text">
+              Building practical web applications with Java, React, Node.js,
+              MongoDB, and clean frontend experiences while expanding into AI/ML.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="assets/SakshiHudge.pdf" download>Download Resume</a>
+              <a class="btn btn-soft" href="#contact">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero-orb-wrap reveal" data-parallax>
+            <div class="ai-orb" aria-label="Animated futuristic developer interface orb">
+              <div class="orb-ring ring-one"></div>
+              <div class="orb-ring ring-two"></div>
+              <div class="orb-ring ring-three"></div>
+              <div class="orb-core">
+                <span>DEV</span>
+              </div>
+              <div class="orbit-dot dot-one"></div>
+              <div class="orbit-dot dot-two"></div>
+              <div class="orbit-dot dot-three"></div>
+            </div>
+            <div class="hud-card hud-top">
+              <span>Primary Stack</span>
+              <strong>Java + MERN</strong>
+            </div>
+            <div class="hud-card hud-bottom">
+              <span>Focus</span>
+              <strong>Full-Stack Development</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-shapes" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a class="scroll-cue" href="#about" aria-label="Scroll to about">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="about section-shell" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Building reliable web applications with Java and MERN</h2>
+        </div>
+        <div class="about-grid">
+          <div class="profile-card glass-card reveal" data-tilt>
+            <div class="profile-ring">
+              <div class="profile-image">SH</div>
+              <span class="tech-float tech-one">React</span>
+              <span class="tech-float tech-two">Java</span>
+              <span class="tech-float tech-three">AI/ML</span>
+              <span class="tech-float tech-four">MongoDB</span>
+            </div>
+          </div>
+          <div class="about-copy glass-card reveal">
+            <p>
+              Sakshi Hudge is a passionate software developer focused on Java,
+              MERN Stack development, and real-world web applications. She has
+              hands-on project experience with React, Node.js, MongoDB, PHP,
+              MySQL, and API integrations, and is currently learning AI/ML to
+              build more intelligent software solutions.
+            </p>
+            <div class="stat-grid">
+              <article>
+                <strong data-counter="5">0</strong><span>+ Projects Completed</span>
+              </article>
+              <article>
+                <strong data-counter="2">0</strong><span>Internships</span>
+              </article>
+              <article>
+                <strong data-counter="8.95" data-decimal="true">0</strong><span>CGPA</span>
+              </article>
+              <article>
+                <strong data-counter="5">0</strong><span>Certifications</span>
+              </article>
+              <article>
+                <strong>Kiran</strong><span>Scholar at Persistent Systems</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section-shell" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills Snapshot</p>
+          <h2>Technologies I work with</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card glass-card reveal" data-tilt>
+            <span class="skill-icon">01</span>
+            <h3>Programming Languages</h3>
+            <p>Primary programming foundation for logic building, backend work, and problem solving.</p>
+            <ul>
+              <li>Java</li><li>C++</li><li>Python</li><li>PHP</li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          </article>
+          <article class="skill-card glass-card reveal" data-tilt>
+            <span class="skill-icon">02</span>
+            <h3>Web Technologies</h3>
+            <p>Frontend skills for responsive layouts, interactive pages, and modern UI development.</p>
+            <ul>
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li><li>React</li>
+            </ul>
+          </article>
+          <article class="skill-card glass-card reveal" data-tilt>
+            <span class="skill-icon">03</span>
+            <h3>MERN & Databases</h3>
+            <p>Tools used for full-stack applications, REST APIs, and database-backed systems.</p>
+            <ul>
+              <li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>MySQL</li>
+            </ul>
+          </article>
+          <article class="skill-card glass-card reveal" data-tilt>
+            <span class="skill-icon">04</span>
+            <h3>Learning AI/ML & Tools</h3>
+            <p>Currently learning data science libraries while using Git and AWS fundamentals.</p>
+            <ul>
+              <li>NumPy</li><li>Pandas</li><li>Scikit-learn</li><li>AWS</li><li>Git</li>
+            </ul>
+          </article>
+          <article class="skill-card glass-card reveal" data-tilt>
+            <span class="skill-icon">05</span>
+            <h3>Professional Skills</h3>
+            <p>Team-oriented strengths that support delivery, ownership, and collaboration.</p>
+            <ul>
+              <li>Problem Solving</li><li>Leadership</li><li>Team Collaboration</li>
+            </ul>
+          </article>
         </div>
-    </nav>
+      </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="floating-shapes">
-            <div class="floating-shape"></div>
-            <div class="floating-shape"></div>
-            <div class="floating-shape"></div>
-            <div class="floating-shape"></div>
-            <div class="floating-shape"></div>
+      <section class="projects section-shell" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Project Work</p>
+          <h2>Applications built through hands-on practice</h2>
         </div>
-        <div class="hero-content">
-            <h1 class="hero-title">Hi, I'm <span class="highlight">Sakshi Hudge</span></h1>
-            <h2 class="hero-subtitle">Software Developer | Full-Stack Engineer | MERN Specialist</h2>
-            <p class="hero-tagline">Building scalable web applications with React, Node.js, MongoDB, and MySQL. Open to Software Engineer and Full-Stack Developer roles.</p>
-            <div class="hero-buttons">
-                <a href="SakshiHudge.pdf" class="btn btn-primary" download>Download Resume</a>
-                <a href="#projects" class="btn btn-secondary">View Projects</a>
+        <div class="project-grid">
+          <article class="project-card glass-card reveal" data-tilt>
+            <div class="project-image preview-one">
+              <img src="assets/Earn_Learn.png" alt="Earn and Learn Samiti Portal screenshot">
             </div>
-            <div class="hero-social">
-                <a href="https://github.com/sakshi6301" target="_blank" class="social-link" title="GitHub">GitHub</a>
-                <a href="https://www.linkedin.com/in/sakshi-hudge-b3a95625b/" target="_blank" class="social-link" title="LinkedIn">LinkedIn</a>
-                <a href="mailto:sakshi.bhudge@gmail.com" class="social-link" title="Email">Email</a>
+            <div class="project-body">
+              <h3>Earn & Learn Samiti Portal</h3>
+              <p>Department management and opportunity portal for student work programs, records, and workflow coordination.</p>
+              <div class="badges"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JavaScript</span></div>
+              <div class="project-actions"><a href="https://github.com/sakshi6301/Earn_and_learn-department-management-sytem-" target="_blank" rel="noreferrer">GitHub</a><a href="#contact">Live Demo</a></div>
             </div>
+          </article>
+          <article class="project-card glass-card reveal" data-tilt>
+            <div class="project-image preview-two">
+              <img src="assets/Scope.png" alt="SCOPE smart parent engagement project screenshot">
+            </div>
+            <div class="project-body">
+              <h3>SCOPE</h3>
+              <p>Smart parent engagement project exploring machine learning concepts for communication and student support.</p>
+              <div class="badges"><span>MERN Stack</span><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+              <div class="project-actions"><a href="https://github.com/sakshi6301/smart-parent-engagement" target="_blank" rel="noreferrer">GitHub</a><a href="#contact">Live Demo</a></div>
+            </div>
+          </article>
+          <article class="project-card glass-card reveal" data-tilt>
+            <div class="project-image preview-three">
+              <img src="assets/ustavmancha.png" alt="UstavMancha event management project screenshot">
+            </div>
+            <div class="project-body">
+              <h3>UstavMancha</h3>
+              <p>Event management platform for organizing events, managing details, and improving user-side event workflows.</p>
+              <div class="badges"><span>React</span><span>MongoDB</span><span>Node.js</span><span>Express.js</span></div>
+              <div class="project-actions"><a href="https://github.com/sakshi6301/EventManagement" target="_blank" rel="noreferrer">GitHub</a><a href="#contact">Live Demo</a></div>
+            </div>
+          </article>
+          <article class="project-card glass-card reveal" data-tilt>
+            <div class="project-image preview-four">
+              <img src="assets/vss_hostel.png" alt="VSS Hostel Management project screenshot">
+            </div>
+            <div class="project-body">
+              <h3>VSS Hostel Management</h3>
+              <p>PHP and MySQL hostel system for room allocation, records, and operations.</p>
+              <div class="badges"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+              <div class="project-actions"><a href="#contact">GitHub</a><a href="#contact">Live Demo</a></div>
+            </div>
+          </article>
+          <article class="project-card glass-card reveal" data-tilt>
+            <div class="project-image preview-five">
+              <img src="assets/Visitor.png" alt="Visitor Management System project screenshot">
+            </div>
+            <div class="project-body">
+              <h3>Visitor Management System</h3>
+              <p>Visitor tracking system with email and SMS integration for secure check-in communication.</p>
+              <div class="badges"><span>Python</span><span>Gmail API</span><span>Web App</span></div>
+              <div class="project-actions"><a href="https://github.com/sakshi6301/Visitor_Management" target="_blank" rel="noreferrer">GitHub</a><a href="#contact">Live Demo</a></div>
+            </div>
+          </article>
         </div>
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-card">
-                    <p class="about-text">
-                        Final-year IT student and aspiring full-stack developer with hands-on experience building scalable web applications using React, PHP, and MySQL. Strong problem-solving skills, a clean-code mindset, and the ability to quickly adapt to new technologies, seeking an entry-level software development role.
-                    </p>
-                </div>
-            </div>
+      <section class="experience section-shell" id="experience">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Internship roles and professional exposure</h2>
         </div>
-    </section>
+        <div class="timeline">
+          <article class="timeline-item glass-card reveal">
+            <span class="node"></span>
+            <p>Jan 2025 - Sep 2025</p>
+            <h3>Java Full Stack Developer</h3>
+            <strong>Shorat Innovation</strong>
+          </article>
+          <article class="timeline-item glass-card reveal">
+            <span class="node"></span>
+            <p>Sep 2023 - Dec 2023</p>
+            <h3>Web Developer</h3>
+            <strong>Ingenious Technohub</strong>
+          </article>
+        </div>
+      </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">PHP</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Web Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">React</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Frameworks & Databases</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Laravel</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">AI/ML & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Soft Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Analytical Thinking</span>
-                        <span class="skill-tag">Team Leadership</span>
-                        <span class="skill-tag">Collaboration</span>
-                    </div>
-                </div>
-            </div>
+      <section class="education section-shell" id="education">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Academics</p>
+          <h2>Education and performance</h2>
         </div>
-    </section>
+        <div class="education-grid">
+          <article class="edu-card glass-card reveal" data-tilt>
+            <span>01</span><h3>BE Information Technology</h3><p>CGPA: 8.95</p><strong>2023-2026</strong>
+          </article>
+          <article class="edu-card glass-card reveal" data-tilt>
+            <span>02</span><h3>Diploma in Information Technology</h3><p>88.44%</p><strong>2020-2023</strong>
+          </article>
+          <article class="edu-card glass-card reveal" data-tilt>
+            <span>03</span><h3>SSC</h3><p>93.20%</p><strong>2015-2020</strong>
+          </article>
+        </div>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Earn &amp; Learn Samiti Portal – Job &amp; Learning Platform</h3>
-                        <div class="project-tech">React • Node.js • Express • MongoDB</div>
-                    </div>
-                    <p class="project-description">
-                        <strong>Problem:</strong> Lack of structured platforms for students to find earning opportunities while learning.<br>
-                        <strong>Solution:</strong> Built a role-based web application with secure authentication, job approval workflows, and application tracking for students, providers, and administrators.
-                    </p>
-                    <p class="project-date">June 2026 | <a href="https://github.com/sakshi6301/Earn_and_learn-department-management-sytem-" target="_blank" class="project-link">GitHub</a></p>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">SCOPE – AI-Powered Parent Engagement System</h3>
-                        <div class="project-tech">React.js • Node.js • Express.js • MongoDB • Python • Scikit-learn</div>
-                    </div>
-                    <p class="project-description">
-                        <strong>Problem:</strong> Lack of effective parent-teacher communication impacts student performance.<br>
-                        <strong>Solution:</strong> Built a full-stack application with real-time attendance tracking, AI-based student risk prediction, automated notifications, and data-driven insights using Chart.js.
-                    </p>
-                    <p class="project-date">2026 | <a href="https://github.com/sakshi6301/smart-parent-engagement.git" class="project-link" target="_blank">GitHub</a></p>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">UstavMancha – Event Management Platform</h3>
-                        <div class="project-tech">React • MongoDB</div>
-                    </div>
-                    <p class="project-description">
-                        <strong>Problem:</strong> Manual event management leads to inefficiency and errors.<br>
-                        <strong>Solution:</strong> Built a secure web application with user authentication, real-time dashboards, and automated event workflows.
-                    </p>
-                    <p class="project-date">June 2025 | <a href="https://github.com/sakshi6301/EventManagement.git" class="project-link" target="_blank">GitHub</a></p>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">VSS – Hostel Management System</h3>
-                        <div class="project-tech">HTML • CSS • JavaScript • PHP • MySQL</div>
-                    </div>
-                    <p class="project-description">
-                        <strong>Problem:</strong> Hostel operations require manual tracking of admissions, rooms, and attendance.<br>
-                        <strong>Solution:</strong> Developed a centralized platform automating admissions, room allocation, mess management, and attendance tracking.
-                    </p>
-                    <p class="project-date">Aug 2025 | <a href="https://github.com/sakshi6301/Vss_HostelManagement.git" class="project-link" target="_blank">GitHub</a></p>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Visitor Management System</h3>
-                        <div class="project-tech">Django • Python • Gmail API • Twilio</div>
-                    </div>
-                    <p class="project-description">
-                        <strong>Problem:</strong> Manual visitor tracking is inefficient and lacks real-time monitoring.<br>
-                        <strong>Solution:</strong> Developed a full-stack web application that digitizes visitor management with check-in/check-out, automated notifications, digital signatures, photo capture, and real-time analytics.
-                    </p>
-                    <p class="project-date">2025 | <a href="https://github.com/sakshi6301/Visitor_Management.git" class="project-link" target="_blank">GitHub</a></p>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Online Book Store Management System</h3>
-                        <div class="project-tech">Python • Django • MySQL</div>
-                    </div>
-                    <p class="project-description">
-                        <strong>Problem:</strong> Traditional bookstores lack online presence and inventory management.<br>
-                        <strong>Solution:</strong> Created a Django-based e-commerce platform with inventory management, order processing, and user authentication.
-                    </p>
-                    <p class="project-date">Nov 2024 | <a href="#" class="project-link">GitHub</a></p>
-                </div>
-            </div>
+      <section class="recognition section-shell" id="recognition">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Recognition</p>
+          <h2>Scholarship and achievement</h2>
         </div>
-    </section>
+        <article class="recognition-card glass-card reveal" data-tilt>
+          <span class="recognition-label">Persistent Systems</span>
+          <div>
+            <h3>Kiran Scholar at Persistent Systems</h3>
+            <p>
+              Recognized through Persistent Systems' Kiran scholarship initiative,
+              reflecting academic consistency, potential, and commitment to
+              growth in technology.
+            </p>
+          </div>
+        </article>
+      </section>
 
-    <!-- Internships Section -->
-    <section id="internships" class="section">
-        <div class="container">
-            <h2 class="section-title">Internships</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Java Full Stack Developer Intern</h3>
-                        <div class="project-tech">Shorat Innovation Pvt. Ltd.</div>
-                    </div>
-                    <p class="project-description">
-                        • Developed PageNest, an online bookstore application with full-stack functionality<br>
-                        • Built RESTful APIs for seamless frontend-backend communication<br>
-                        • Implemented backend logic for user management, inventory, and order processing
-                    </p>
-                    <p class="project-date">Jan 2025 – Sep 2025</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Web Developer Intern</h3>
-                        <div class="project-tech">Ingenious Technohub Pvt. Ltd.</div>
-                    </div>
-                    <p class="project-description">
-                        • Developed a Hotel Management System using PHP and MySQL<br>
-                        • Implemented booking system, billing module, and admin dashboard<br>
-                        • Optimized database queries for improved performance
-                    </p>
-                    <p class="project-date">Sep 2023 – Dec 2023</p>
-                </div>
-            </div>
+      <section class="certifications section-shell" id="certifications">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Learning</p>
+          <h2>Certifications and courses</h2>
         </div>
-    </section>
+        <div class="cert-grid">
+          <article class="cert-card reveal">Oracle AI Foundations</article>
+          <article class="cert-card reveal">AWS Certification</article>
+          <article class="cert-card reveal">Quantum Computing</article>
+          <article class="cert-card reveal">Python Certification</article>
+          <article class="cert-card reveal">Bootstrap Certification - IIT Bombay</article>
+        </div>
+      </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-content">
-                <div class="education-card">
-                    <h3 class="education-degree">Bachelor of Engineering in Information Technology</h3>
-                    <p class="education-field">P.E.S's Modern College of Engineering, Pune</p>
-                    <p class="education-status">CGPA: 8.95</p>
-                    <p class="education-description">2023 – 2026</p>
-                </div>
-                <div class="education-card">
-                    <h3 class="education-degree">Diploma in Information Technology</h3>
-                    <p class="education-field">Puranmal Lahoti Government Polytechnic, Pune</p>
-                    <p class="education-status">88.44%</p>
-                    <p class="education-description">2020 – 2023</p>
-                </div>
-                <div class="education-card">
-                    <h3 class="education-degree">Secondary School Certificate (SSC)</h3>
-                    <p class="education-field">Anant Tuljaram Naik Vidyalaya, Nalegaon, Maharashtra</p>
-                    <p class="education-status">93.20%</p>
-                    <p class="education-description">2015 – 2020</p>
-                </div>
+      <section class="contact section-shell" id="contact">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Open to opportunities</h2>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form glass-card reveal" data-form>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Tell me about the opportunity" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-status" data-status></p>
+          </form>
+          <aside class="contact-info glass-card reveal">
+            <p>Phone: <a href="tel:+917498560364">+91 7498560364</a></p>
+            <p>GitHub: <a href="https://github.com/sakshi6301" target="_blank" rel="noreferrer">sakshi6301</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sakshi-hudge-b3a95625b" target="_blank" rel="noreferrer">sakshi-hudge-b3a95625b</a></p>
+            <div class="socials">
+              <a href="https://github.com/sakshi6301" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/sakshi-hudge-b3a95625b" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="tel:+917498560364">Call</a>
             </div>
+          </aside>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-tags">
-                        <span class="skill-tag">Oracle Certified – AI Foundations (OCI 2025)</span>
-                        <span class="skill-tag">AWS Certified</span>
-                        <span class="skill-tag">Quantum Computing (Persistent Foundation & i4C)</span>
-                        <span class="skill-tag">Python Programming</span>
-                        <span class="skill-tag">Bootstrap Training (IIT Bombay)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:sakshi.bhudge@gmail.com">sakshi.bhudge@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/sakshi-hudge-b3a95625b/" target="_blank">linkedin.com/in/sakshi-hudge-b3a95625b</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div>
-                            <h4>GitHub</h4>
-                            <a href="https://github.com/sakshi6301" target="_blank">github.com/sakshi6301</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div>
-                            <h4>Phone</h4>
-                            <a href="tel:+917498560364">+91 7498560364</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper">
-                    <p style="text-align: center; color: var(--text-light); padding: 2rem;">
-                        <strong>Prefer direct contact?</strong><br>
-                        Reach out via email or LinkedIn for faster response.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Sakshi Hudge. All rights reserved.</p>
-        </div>
+    <footer>
+      <p>Sakshi Hudge. Java Developer, MERN Stack Developer, and AI/ML learner.</p>
+      <a href="#home">Back to top</a>
     </footer>
 
-    <script src="js/script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
