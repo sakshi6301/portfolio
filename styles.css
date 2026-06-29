@@ -835,6 +835,30 @@ body.light-mode .badges span {
 .preview-five { background: linear-gradient(135deg, #260f35, #ec4899, #6366f1); }
 .preview-six { background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0 12px, transparent 12px 24px), linear-gradient(135deg, #0c1728, #6366f1); }
 
+.project-placeholder {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  min-height: 190px;
+  place-items: center;
+  padding: 22px;
+  text-align: center;
+}
+
+.project-placeholder span {
+  color: var(--cyan);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.project-placeholder strong {
+  max-width: 220px;
+  color: var(--text);
+  font-size: 1.8rem;
+  line-height: 1.08;
+}
+
 .project-body {
   display: flex;
   flex: 1;
